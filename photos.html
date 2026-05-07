@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="module" src="https://pyscript.net/releases/2026.3.1/core.js"></script>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.3.1/core.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+    body{
+        background:#b2c4f6;
+        font-family:Arial,sans-serif;
+    }
+
+    .navbar{
+        box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    h1{
+        text-align:center;
+        color:#0d6efd;
+        font-weight:bold;
+        margin-top:100px;
+    }
+
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 320px);
+        gap: 20px; 
+        padding: 20px;
+        justify-content: center;
+        align-content: center;
+        min-height: 100vh;
+    }
+
+    .card {
+        background: white;
+        border-radius: 15px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        width: 320px;
+        height: 280px;
+        border:none;
+        transition:0.2s;
+    }
+
+    .card img {
+        object-fit: fill;
+        width: 100%;
+        height: 100%;
+    }
+
+    .card-text {
+        padding: 15px;
+        text-align: left;
+    }
+
+    .card-text h3 {
+        margin: 0;
+        font-size: 1.1em;
+        color: #0d6efd;
+        font-weight:bold;
+    }
+
+    .card-text p {
+        margin: 5px 0 0;
+        color: #666;
+        font-size: 0.9em;
+    }
+    </style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="List.html">SapphApp</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="List.html">Classmates</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Tracker.html">Attendance</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="Photos.html">Photos</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<h1>10-Sapphire Highlights</h1>
+
+<div class="gallery-grid">
+    <div class="card">
+        <img src="pic1.jpg">
+            <div class="card-text">
+                <h3 id="img1-header"></h3>
+                <p id="img1-desc"></p>
+            </div>
+    </div>
+
+    <div class="card">
+        <img src="pic2.jpg">
+            <div class="card-text">
+                <h3 id="img2-header"></h3>
+                <p id="img2-desc"></p>
+            </div>
+    </div>
+
+    <div class="card">
+        <img src="pic3.jpg">
+            <div class="card-text">
+                <h3 id="img3-header"></h3>
+                <p id="img3-desc"></p>
+            </div>
+    </div>
+
+    <div class="card">
+        <img src="pic4.png">
+            <div class="card-text">
+                <h3 id="img4-header"></h3>
+                <p id="img4-desc"></p>
+            </div>
+    </div>
+
+    <div class="card">
+        <img src="pic5.jpg">
+            <div class="card-text">
+                <h3 id="img5-header"></h3>
+                <p id="img5-desc"></p>
+            </div>
+    </div>
+
+    <div class="card">
+        <img src="pic6.jpeg">
+            <div class="card-text">
+                <h3 id="img6-header"></h3>
+                <p id="img6-desc"></p>
+            </div>
+    </div>
+
+    <div class="card">
+        <img src="pic7.png">
+            <div class="card-text">
+                <h3 id="img7-header"></h3>
+                <p id="img7-desc"></p>
+            </div>
+    </div>
+
+    <div class="card">
+        <img src="pic8.png">
+            <div class="card-text">
+                <h3 id="img8-header"></h3>
+                <p id="img8-desc"></p>
+            </div>
+    </div>
+</div>
+
+<script type="py" src="photos.py"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
